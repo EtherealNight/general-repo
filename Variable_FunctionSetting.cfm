@@ -7,7 +7,7 @@
     </cffunction>
     <!---If conditional. If true, run loop --->
  <cfif comp_id EQ #reports.master_co_id#>
- <!---query equal to setVariable(variable set above, function(returns report))
+ <!---query equal to setVariable(variable set above, function(returns report)) --->
 <cfloop query="#setVariable( 'reports', getQuery() )#" >
 <cfset #reports.comp_id# = #read_company.master_co_ID# >
 </cfloop>
